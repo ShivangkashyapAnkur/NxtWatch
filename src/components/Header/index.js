@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 import {withRouter, Link} from 'react-router-dom'
 import {FaMoon} from 'react-icons/fa'
-import {MdOutlineLightMode} from 'react-icons/md'
+import {BsSun} from 'react-icons/md'
 import {FiLogOut} from 'react-icons/fi'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiOutlineClose} from 'react-icons/ai'

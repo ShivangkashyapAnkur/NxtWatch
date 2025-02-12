@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 import {withRouter, Link} from 'react-router-dom'
 import {FaMoon} from 'react-icons/fa'
-import {BsSun} from 'react-icons/md'
+import {BsSun} from 'react-icons/bs'
 import {FiLogOut} from 'react-icons/fi'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiOutlineClose} from 'react-icons/ai'
@@ -62,7 +62,7 @@ const Header = props => {
                   onClick={toggleTheme}
                 >
                   {isDark ? (
-                    <MdOutlineLightMode size="28" color="white" />
+                    <BsSun size="28" color="white" />
                   ) : (
                     <FaMoon size="28" />
                   )}

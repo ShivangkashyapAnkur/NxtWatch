@@ -100,21 +100,18 @@ class VideoDetails extends Component {
         return null
     }
   }
-
-  likeBtn = () => {
-    const {like} = this.state
-    this.setState({
-      like: !like,
-      dislike: like,
-    })
+likeBtn = () => {
+    this.setState(prevState => ({
+      like: !prevState.like,
+      dislike: false, // Ensure Dislike is reset when Like is clicked
+    }))
   }
 
   dislikeBtn = () => {
-    const {dislike} = this.state
-    this.setState({
-      dislike: !dislike,
-      like: dislike,
-    })
+    this.setState(prevState => ({
+      dislike: !prevState.dislike,
+      like: false, // Ensure Like is reset when Dislike is clicked
+    }))
   }
 
   renderVideoSuccess = () => {
